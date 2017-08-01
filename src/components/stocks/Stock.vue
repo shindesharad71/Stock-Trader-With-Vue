@@ -1,3 +1,18 @@
 <template>
-    <h1>Stocks/Stock Component</h1>
+    <div class="col-sm-6 col-md-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">NAME</h3>
+                <small>(Price: Price)</small>
+            </div>
+            <div class="panel-body">
+                <div class="pull-left">
+                    <input type="number" class="form-control" placeholder="Quantity">
+                </div>
+                <div class="pull-right">
+                    <button class="btn btn-success">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
