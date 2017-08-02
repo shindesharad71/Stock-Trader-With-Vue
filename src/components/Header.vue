@@ -9,7 +9,7 @@
                 <router-link to="/portfolio" active-class="active" tag="li"><a>Portfolio</a></router-link>
                 <router-link to="/stocks" active-class="active" tag="li"><a>Stocks</a></router-link>                
             </ul>
-            <strong id="funds" class="navbar-text navbar-right">Funds: {{funds}}</strong>
+            <strong id="funds" class="navbar-text navbar-right">Funds: {{funds | currency }}</strong>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#">End Day</a></li>
               <li class="dropdown">
