@@ -1,6 +1,6 @@
 <template>
     <div class="col-sm-6 col-md-4">
-        <div class="panel panel-success">
+        <div class="panel panel-info">
             <div class="panel-heading">
                 <h3 class="panel-title">{{ stock.name }} <small>(Price: {{stock.price}} | Quantity: {{stock.quantity}})</small></h3>
             </div>
@@ -27,16 +27,17 @@ export default {
         }
     },
     methods: {
-        ...mapActions([
-            'sellStock'
-        ]),
+        ...mapActions({
+            placeSellOrder: 'sellStock'
+        }),
         sellStock() {
             const order = {
-                stockID: this.stock.id,
-                stockPrice: this.stock.price,
-                quantity: this.quantity
+                stockId: this.stock.id,
+                quantity: this.quantity,
+                stockPrice: this.stock.price
             };
-            this.sellStock();
+            this.placeSellOrder(order);
+            this.quantity = 0;
         }
     }
 }
