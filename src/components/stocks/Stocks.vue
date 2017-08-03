@@ -8,7 +8,7 @@
             </div>
         </div>
     </div><br>
-    <app-stock v-for="stock in stocks" :stock="stock"></app-stock><br>
+    <app-stock v-for="stock in stocks" :stock="stock" @isbuyd="changeIsBuy"></app-stock><br>
     <p class="text-center" id="info"><i class="fa fa-info-circle"></i> <i>enter number of stocks you want to buy for perticular stock.</i></p>
 </div>
 </template>
@@ -28,6 +28,12 @@ export default {
     computed: {
         stocks() {
             return this.$store.getters.stocks;
+        }
+    },
+    methods: {
+        changeIsBuy() {
+            return this.isBuy = true;
+            console.log(isBuy);
         }
     }
 }
