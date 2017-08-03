@@ -1,6 +1,8 @@
-# Stock Trader With Vue
+# :chart: Stock Trader With Vue
 
 Stock Trader Web App Using Vue JS.
+
+Demo - https://shindesharad71.github.io/Stock-Trader-With-Vue/
 
 ### First Look
 
