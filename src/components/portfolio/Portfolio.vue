@@ -1,7 +1,7 @@
 <template>
 <div>
-    <div class="container">
-        <footer class="col-md-offset-3 col-md-6  text-center">
+    <div class="container" v-show="checkStock">
+        <footer class="col-md-offset-3 col-md-6 text-center">
             <div class="alert alert-info">
                 <h5>You Have <strong>0</strong> Stocks, Please Purchase Stocks To Trade!</h5>
             </div>
@@ -20,7 +20,10 @@ export default {
     computed: {
         ...mapGetters({
         stocks: 'stockPortfolio'
-        })
+        }),
+        checkStock() {
+            return this.stocks === undefined || this.stocks.length == 0;
+        }
     },
     components: {
         'app-data-stock': Stock
