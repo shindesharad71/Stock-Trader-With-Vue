@@ -20,7 +20,7 @@
     </div>
     <hr>
     <br>
-    <p><i class="fa fa-money" aria-hidden="true"></i> Your Funds: {{ funds | currency }}</p>
+    <p><i class="fa fa-money" aria-hidden="true"></i> Your Funds: <strong>{{ funds | currency }}</strong></p>
 </div>
 </template>
 

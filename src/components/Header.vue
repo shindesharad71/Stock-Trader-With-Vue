@@ -100,5 +100,8 @@ export default {
 #funds {
 	color: #fff;
 	padding-top: 10px;
+	background: #777777;
+	padding: 10px;
+	border-radius: 5px;
 }
 </style>
