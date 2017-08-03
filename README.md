@@ -2,6 +2,10 @@
 
 Stock Trader Web App Using Vue JS.
 
+### First Look
+
+![Stock Trader](https://github.com/shindesharad71/Stock-Trader-With-Vue/blob/master/screen.png?raw=true "Stock Trader")
+
 ### Features
 
 * You May Save & Load Your Data
