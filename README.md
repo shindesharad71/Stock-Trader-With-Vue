@@ -11,9 +11,24 @@ Stock Trader Web App Using Vue JS.
 
 ### Technologies Used
 
-* Vue JS 2 ofcourse!
-* Twitter Bootstrap - To Look Things Good!
-* Vuex - Better State Management
-* Vue Router - To Find The Way!
-* Vue Resource - The Way To Talk With Server
-* Firebase - Store Records 
+* ```Vue JS 2``` - ofcourse!
+* ```Twitter Bootstrap``` - To Look Things Good!
+* ```Vuex``` - Better State Management
+* ```Vue Router``` - To Find The Way!
+* ```Vue Resource``` - The Way To Talk With Server
+* ```Firebase``` - Store Records
+
+### Installation & Use
+
+* Download or Clone This Repository.
+* Enter Into Project Repository Folder
+* Install Required Packages Using NPM By This Command - 
+```npm install```
+* Run Project On Local Envirment By Running This Command -
+```npm run dev```
+* To Deploy For Production Run This Command - 
+```npm run build```
+
+### Licence
+
+MIT - Enjoy Free Code!
