@@ -41,6 +41,7 @@ export default {
             };
             this.placeSellOrder(order);
             this.quantity = 0;
+            this.$emit('issell');
         }
     },
     computed: {
