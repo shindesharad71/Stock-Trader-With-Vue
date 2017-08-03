@@ -56,9 +56,11 @@ export default {
 				stocks: this.$store.getters.stocks
 			};
 			this.$http.put('data.json', data);
+			alert('Data Saved Successfully');
 		},
 		loadData() {
 			this.fetchData();
+			alert('Data Loaded Successfully');
 		}
 	}
 }
