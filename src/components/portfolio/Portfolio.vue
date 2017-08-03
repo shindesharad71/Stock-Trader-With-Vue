@@ -1,5 +1,6 @@
 <template>
 <div>
+    <h1 class="text-center"><i class="fa fa-cube"></i> My Stocks</h1><br>
     <div class="container" v-show="checkStock">
         <footer class="col-md-offset-3 col-md-6 text-center">
             <div class="alert alert-info">

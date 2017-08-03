@@ -3,7 +3,7 @@
     <div class="container">
         <footer class="col-md-offset-4 col-md-4">
             <div class="alert" :class="setAlert" id="footer">
-                <h5 class="text-center">You Have <strong>{{ calculateStatus | currency }} - {{status}}</strong></h5>
+                <h5 class="text-center"><i class="fa fa-info-circle" aria-hidden="true"></i> You Have <strong>{{ calculateStatus | currency }} - {{status}}</strong></h5>
             </div>
         </footer>
     </div>

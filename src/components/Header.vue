@@ -6,18 +6,19 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <router-link to="/portfolio" active-class="active" tag="li"><a>Portfolio</a></router-link>
-                <router-link to="/stocks" active-class="active" tag="li"><a>Stocks</a></router-link>                
+                <router-link to="/portfolio" active-class="active" tag="li"><a><i class="fa fa-user" aria-hidden="true"></i> Portfolio</a></router-link>
+                <router-link to="/stocks" active-class="active" tag="li"><a><i class="fa fa-area-chart" aria-hidden="true"></i> Stocks</a></router-link>                
             </ul>
-            <strong id="funds" class="navbar-text navbar-right">Funds: {{funds | currency }}</strong>
+            <strong id="funds" class="navbar-text navbar-right"><i class="fa fa-cubes" aria-hidden="true"></i> Funds: {{funds | currency }}</strong>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" @click="endDay">End Day</a></li>
+              <li><a href="#" @click="endDay"><i class="fa fa-sun-o" aria-hidden="true"></i> End Day</a></li>
               <li class="dropdown" :class="{ open : isDropdownOpen }"
 			  @click="isDropdownOpen = !isDropdownOpen">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Save & Load <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<i class="fa fa-floppy-o" aria-hidden="true"></i> Save & Load <span class="caret"></span></a>
                 <ul class="dropdown-menu" id="drop">
-                  <li><a href="#" @click="saveData">Save Data</a></li>
-                  <li><a href="#" @click="loadData">Load Data</a></li>
+                  <li><a href="#" @click="saveData"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save Data</a></li>
+                  <li><a href="#" @click="loadData"><i class="fa fa-cloud-download" aria-hidden="true"></i> Load Data</a></li>
                 </ul>
               </li>
             </ul>
