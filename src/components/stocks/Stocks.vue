@@ -33,7 +33,6 @@ export default {
     methods: {
         changeIsBuy() {
             return this.isBuy = true;
-            console.log(isBuy);
         }
     }
 }
