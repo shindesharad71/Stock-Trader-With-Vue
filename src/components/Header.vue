@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-light red">
+    <nav class="navbar navbar-reverse">
         <div class="container-fluid">
           <div class="navbar-header">
             <router-link to="/" class="navbar-brand">Stock Trader</router-link>
@@ -65,8 +65,18 @@ export default {
 
 
 <style scoped>
+.navbar {
+	background: #26C6DA;
+	border-radius: 0px;
+	min-height: 70px;
+}
+
 .navbar a{
     color: #fff;
+}
+
+.navbar li {
+	padding-top: 10px;
 }
 
 #drop a{
@@ -77,6 +87,10 @@ export default {
     color: #000;
 }
 
+.navbar-brand {
+	padding-top: 25px;
+}
+
 .navbar-brand:hover {
 	color: #fff;
 	font-weight: bold;
@@ -84,5 +98,6 @@ export default {
 
 #funds {
 	color: #fff;
+	padding-top: 10px;
 }
 </style>
